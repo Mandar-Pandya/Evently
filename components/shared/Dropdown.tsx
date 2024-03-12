@@ -30,25 +30,7 @@ type DropdownProps = {
 };
 
 const Dropdown = ({ value, onChangeHandler }: DropdownProps) => {
-  // const [categories, setCategories] = useState<ICategory[]>([]);
-  // const [newcategory, setnewCategory] = useState("");
 
-  // const handleAddCategory = () => {
-  //   createCategory({ categoryName: newcategory }).then((category) => {
-  //     setCategories((prev) => [...prev,category]);
-  //   });
-  // };
-
-  // useEffect(() => {
-  //   const getCategories = async() => {
-  //     const categoriesList = await getAllCategories()
-
-  //     categoriesList && setCategories(categoriesList)
-  //   }
-
-  //   getCategories()
-
-  // },[])
 
   const [categories, setCategories] = useState<ICategory[]>([])
   const [newCategory, setNewCategory] = useState('');
@@ -87,7 +69,7 @@ const Dropdown = ({ value, onChangeHandler }: DropdownProps) => {
 
         <AlertDialog>
           <AlertDialogTrigger className="p-medium-14 flex w-full rounded-sm py-3 pl-8 text-primary-500 hover:bg-primary-50 focus:text-primary-500">
-            Open
+            Add new Category
           </AlertDialogTrigger>
           <AlertDialogContent className="bg-white">
             <AlertDialogHeader>
