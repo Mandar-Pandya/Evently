@@ -51,7 +51,7 @@ const ProfilePage = async () => {
           emptyTitle="No events have been created yet"
           emptyStateSubtext="Go create some now"
           collectionType="Events_Organized"
-          limit={3}
+          Limit={3}
           page={2}
           urlParamName="eventsPage"
           totalPages={orgainzedEvents?.totalPages}
