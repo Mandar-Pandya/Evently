@@ -1,11 +1,8 @@
-import { SignIn } from '@clerk/nextjs'
-import React from 'react'
+import { SignIn } from "@clerk/nextjs";
+import React from "react";
 
 const LoginPage = () => {
-  console.log("in signin page")
-  return (
-    <SignIn />
-  )
-}
+  return <SignIn />;
+};
 
-export default LoginPage
+export default LoginPage;

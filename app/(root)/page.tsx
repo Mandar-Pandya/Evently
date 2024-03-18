@@ -7,6 +7,7 @@ import { SearchParamProps } from "@/types";
 import Image from "next/image";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
+import Heroimg from "../../public/assets/images/React.jpg";
 
 export default async function Home({ searchParams }: SearchParamProps) {
   const query = (searchParams?.query as string) || "";
@@ -25,7 +26,7 @@ export default async function Home({ searchParams }: SearchParamProps) {
         <div className="wrapper grid grid-cols-1 gap-5 md:grid-cols-2 2xl:gap-0">
           <div className="flex flex-col justify-center gap-8">
             <h1 className="h1-bold">
-              Host, Connect, Celebrate: Your Events, Our Platform!
+              Evently:Hosting and Ticketing Made Simple!
             </h1>
             <p className="p-regular-20 md:p-regular-24">
               Book and learn helpful tips from 3,168+ mentors in world-class
@@ -37,7 +38,7 @@ export default async function Home({ searchParams }: SearchParamProps) {
           </div>
 
           <Image
-            src="/assets/images/hero.png"
+            src={Heroimg}
             alt="hero"
             width={1000}
             height={1000}
