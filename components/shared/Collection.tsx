@@ -37,7 +37,7 @@ const Collection = ({
             <li key={event._id} className="flex justify-center">
               <Card event={event} hasOrderLink={hasOrderLink} hidePrice={hidePrice} />
             </li>
-          )
+          ) 
         })}
       </ul>
 
